@@ -1,0 +1,4 @@
+DROP USER IF EXISTS 'userApp'@'%';
+CREATE USER 'userApp'@'%' IDENTIFIED BY 'urubu100';
+GRANT ALL PRIVILEGES ON musica.* TO 'userApp'@'%';
+FLUSH PRIVILEGES;
